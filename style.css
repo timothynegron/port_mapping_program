@@ -1,23 +1,24 @@
 .meraki-port-style{
-    width: 30px;  
-    height: 30px; 
+    width: 40px;  
+    height: 40px; 
     background-color: aquamarine;
     border: 2px solid black;
+    padding: 5px;
 }
 
 .meraki-ports-container{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-
-    width: 1000px;
-    height: 40px;
+    width: 1100px;
+    padding: 5px;
 }
 
 #meraki-case{
-    background-color: gray;
-    /* width: auto; */
-    height: 100px;
+    background-color: #bebdbded;
+    border: 2px solid black;
+    width: 1150px;
+    height: 125px;
     display: flex;
     flex-direction: column;
     justify-content: center;

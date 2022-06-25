@@ -1,9 +1,10 @@
-// Get Port File from folder
-// Store as list object
+// ┌──────────────────────┐
+// │   Global Variables   │	
+// └──────────────────────┘
 
-// 1 List Object 
-// O(n) Port Connection Objects
-// Port Conection Object = 1 Row
+// ┌──────────────────┐
+// │   Main Function  │	
+// └──────────────────┘
 
 // TODO: call functions in order
 function main(){
@@ -13,20 +14,26 @@ function main(){
     // buildRack();
 }
 
-// ------- Phase 1
+// ┌──────────────┐
+// │   Version 1  │	
+// └──────────────┘
 
 // TODO: get the port data from the CSV file
 function getPortData(){
+    // print data set to console
+    const dataset = $.csv.toObjects(csv);
+    console.log(dataset)
 
 }
 
 // TODO: map the ports to the divs on the switch or patch panel
 function portMapper(){
-
+    
 }
 
-
-// ------- Phase 2
+// ┌──────────────┐
+// │   Version 2  │	
+// └──────────────┘
 
 // TODO: set the tool tips on each port (which patch panel or switch does it go to?)
 function setToolTip(){
@@ -40,8 +47,9 @@ function portClickListener(){
     // change port color
 }
 
-
-// ------- Phase 3
+// ┌──────────────┐
+// │   Version 3  │	
+// └──────────────┘
 
 // TODO: call build patchpanel or build switch accordingly
 function buildRack(){
@@ -89,9 +97,27 @@ function portSwitch(){
     setToolTip();
 }
 
-// -------- Phase 4
+// ┌──────────────┐
+// │   Version 4  │	
+// └──────────────┘
 
 // TODO: build data visualizations
 function drawDataVisualizations(){
 
 }
+
+// ┌──────────────┐
+// │   Version 5  │	
+// └──────────────┘
+
+// TODO: create end device with workstation label
+function createEndDeviceDataSet(){
+    // for each row and create end device if workstation label exist
+}
+
+// TODO: when port clicked build network map for end device
+function drawNetworkMap(){
+    // find match between each data set (R1 R2 Cabinet 1 Cabinet 2)
+    // once have matched list, put add HTML elements to make drawing
+}
+

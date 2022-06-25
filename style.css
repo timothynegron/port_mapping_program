@@ -1,5 +1,12 @@
 /* id selectors */
 
+#app{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 #meraki-case{
     background-color: #bebdbded;
     border: 2px solid black;
@@ -17,8 +24,8 @@
 }
 
 #meraki-title{
-    padding-left: 65px;
     padding-top: 40px;
+    width: 1150px;
 }
 
 /* class selectors */

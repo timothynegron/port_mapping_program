@@ -28,6 +28,10 @@
     width: 1150px;
 }
 
+#dialog{
+    display: none;
+}
+
 /* class selectors */
 
 .meraki-port-style{

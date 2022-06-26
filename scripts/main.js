@@ -2,7 +2,6 @@
 // │   Global Variables   │	
 // └──────────────────────┘
 
-
 const fileName = "meraki-sample-data.csv"
 
 import getPortData from './version1.js';

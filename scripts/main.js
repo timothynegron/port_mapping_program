@@ -16,13 +16,30 @@ main();
 // │   Main Function   │	
 // └───────────────────┘
 
-// TODO: call functions in order
 function main(){
-    // getPortData();
 
     console.log("function: main() started")
 
-    // getPortData();
+    setButtonListeners();
 
     console.log("function: main() completed")
+}
+
+
+function setButtonListeners(){
+    console.log("function: setButtonListeners() started")
+
+    const buttonChooseFile = document.getElementById("button-choose-file")
+    buttonChooseFile.addEventListener("click", clickedButtonChooseFile)
+
+    console.log("function: setButtonListeners() completed")
+}
+
+function clickedButtonChooseFile(){
+    
+    console.log("function: clickedButtonChooseFile started")
+
+    dialog.click();
+
+    console.log("function: clickedButtonChooseFile ended")
 }

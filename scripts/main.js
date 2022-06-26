@@ -4,10 +4,7 @@
 
 const fileName = "meraki-sample-data.csv"
 
-// const colorDeconstructor = require('./color-deconstructor.js');
-// const isValidPrimary = require('./is-valid-primary.js');
-// const isValidSecondary = require('./is-valid-secondary.js');
-// const colorCombinator = require('./color-combinator.js');
+// import getPortData from './version1.js';
 
 // ┌────────────────────┐
 // │   Call Functions   │	
@@ -21,7 +18,7 @@ main();
 
 // TODO: call functions in order
 function main(){
-    getPortData();
+    // getPortData();
 
     //TODO: 
     // portMapper();

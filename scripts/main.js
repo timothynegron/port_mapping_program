@@ -2,9 +2,7 @@
 // │   Global Variables   │	
 // └──────────────────────┘
 
-const fileName = "meraki-sample-data.csv"
 
-// import getPortData from './version1.js';
 
 // ┌────────────────────┐
 // │   Call Functions   │	
@@ -31,6 +29,22 @@ function setButtonListeners(){
 
     const buttonChooseFile = document.getElementById("button-choose-file")
     buttonChooseFile.addEventListener("click", clickedButtonChooseFile)
+
+    const fileInput = document.getElementById("dialog")
+    fileInput.addEventListener("change", e =>{
+
+        console.log("function: fileInput event listener started")
+        
+        Papa.parse(dialog.files[0], {
+            delimiter: ",",
+            skipEmptyLines: true,
+            complete: results => {
+                console.log(results)
+            }
+        })
+
+        console.log("function: fileInput event listener started")
+    })
 
     console.log("function: setButtonListeners() completed")
 }

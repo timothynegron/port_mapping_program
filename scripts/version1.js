@@ -21,18 +21,31 @@ function portMapper(results){
     console.log("function: portMapper() started")
 
     results.data.forEach(element => {
-        // console.log(element[])
-        if(element[4] == 'Open'){
-            const port = document.getElementById("meraki-port-" + element[0])
-            port.style.backgroundColor = "black"
-            console.log("port turned off")
+
+        const port = document.getElementById("meraki-port-" + element[0])
+        let portStatus = element[4];
+        
+        if(element[4] !== "Rack"){
+
+            if(portStatus === 'Open'){
+
+                console.log("Notification: Port Not Connected")
+                port.style.backgroundColor = "black"
+                port.style.color = "white"
+                port.style.fontSize = "8pt"
+                port.innerHTML = element[1]
+            }
+            if(portStatus !== 'Open'){
+
+                console.log("Notification: Port Connected")
+                port.style.backgroundColor = "#0066ff"
+                port.style.color = "white"
+                port.style.fontSize = "8pt"
+                port.innerHTML = element[1]
+            }
         }
     });
-
-    // console.log(results.data)
-
     console.log("function: portMapper() ended")
-    
 }
 
 export default portMapper;

@@ -15,21 +15,24 @@ const fileName = "meraki-sample-data.csv";
 // │   Functions   │	
 // └───────────────┘
 
-// TODO: get the port data from the CSV file
-function getPortData(){
-
-    console.log("function: getPortData() started")
-
-    console.log("function: getPortData() ended")
-}
-
 // TODO: map the ports to the divs on the switch or patch panel
-function portMapper(){
+function portMapper(results){
 
     console.log("function: portMapper() started")
+
+    results.data.forEach(element => {
+        // console.log(element[])
+        if(element[4] == 'Open'){
+            const port = document.getElementById("meraki-port-" + element[0])
+            port.style.backgroundColor = "black"
+            console.log("port turned off")
+        }
+    });
+
+    // console.log(results.data)
 
     console.log("function: portMapper() ended")
     
 }
 
-export default getPortData;
+export default portMapper;

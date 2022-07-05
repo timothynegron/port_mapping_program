@@ -8,6 +8,10 @@ img{
     padding-right: 15px;
 }
 
+li:hover{
+    background-color: #ebebeb;
+}
+
 /* id selectors */
 
 #app{
@@ -41,6 +45,12 @@ img{
 
 #dialog{
     display: none;
+}
+
+#table-container{
+    margin-top: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 /* class selectors */

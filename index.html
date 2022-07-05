@@ -9,73 +9,245 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
 <body>
-    <div id="app">
-        <div id="meraki-title">
-            <h1>Meraki<h1>
+    <div id="app" class="container-fluid d-flex remove-all-margin-padding"> 
+        <div id="left-navigation-pane" class="container-fluid">
+            <div id="logo-container" class="display-4">
+                Quick Desk
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item"><img src="/images/phone-incoming.svg" alt="phone picture">Help Pad</li>
+                <li class="list-group-item"><img src="/images/map.svg" alt="port picture">Port Mapper</li>
+                <li class="list-group-item"><img src="/images/note.svg" alt="ticket picture">Tickets</li>
+                <li class="list-group-item"><img src="/images/project.svg" alt="project picture">Projects</li>
+                <li class="list-group-item" hr><img src="/images/globe.svg" alt="network picture">Network Diagrams</li>
+            </ul>
         </div>
-        <div id="meraki-container">
-            <div id="meraki-case">
-                <div id="meraki-ports-container-1" class="meraki-ports-container">
-                    <div id="meraki-port-1" class="meraki-port-style"></div>
-                    <div id="meraki-port-3" class="meraki-port-style"></div>
-                    <div id="meraki-port-5" class="meraki-port-style"></div>
-                    <div id="meraki-port-7" class="meraki-port-style"></div>
-                    <div id="meraki-port-9" class="meraki-port-style"></div>
-                    <div id="meraki-port-11" class="meraki-port-style"></div>
-                    <div id="meraki-port-13" class="meraki-port-style"></div>
-                    <div id="meraki-port-15" class="meraki-port-style"></div>
-                    <div id="meraki-port-17" class="meraki-port-style"></div>
-                    <div id="meraki-port-19" class="meraki-port-style"></div>
-                    <div id="meraki-port-21" class="meraki-port-style"></div>
-                    <div id="meraki-port-23" class="meraki-port-style"></div>
-                    <div id="meraki-port-25" class="meraki-port-style"></div>
-                    <div id="meraki-port-27" class="meraki-port-style"></div>
-                    <div id="meraki-port-29" class="meraki-port-style"></div>
-                    <div id="meraki-port-31" class="meraki-port-style"></div>
-                    <div id="meraki-port-33" class="meraki-port-style"></div>
-                    <div id="meraki-port-35" class="meraki-port-style"></div>
-                    <div id="meraki-port-37" class="meraki-port-style"></div>
-                    <div id="meraki-port-39" class="meraki-port-style"></div>
-                    <div id="meraki-port-41" class="meraki-port-style"></div>
-                    <div id="meraki-port-43" class="meraki-port-style"></div>
-                    <div id="meraki-port-45" class="meraki-port-style"></div>
-                    <div id="meraki-port-47" class="meraki-port-style"></div>
+        <div id="" class="container-fluid remove-all-margin-padding">
+            <nav class="navbar navbar-expand-lg sticky-top">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Navbar</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Link</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Dropdown
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled">Disabled</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </div>
                 </div>
-                <div id="meraki-port-container-2" class="meraki-ports-container">
-                    <div id="meraki-port-2" class="meraki-port-style"></div>
-                    <div id="meraki-port-4" class="meraki-port-style"></div>
-                    <div id="meraki-port-6" class="meraki-port-style"></div>
-                    <div id="meraki-port-8" class="meraki-port-style"></div>
-                    <div id="meraki-port-10" class="meraki-port-style"></div>
-                    <div id="meraki-port-12" class="meraki-port-style"></div>
-                    <div id="meraki-port-14" class="meraki-port-style"></div>
-                    <div id="meraki-port-16" class="meraki-port-style"></div>
-                    <div id="meraki-port-18" class="meraki-port-style"></div>
-                    <div id="meraki-port-20" class="meraki-port-style"></div>
-                    <div id="meraki-port-22" class="meraki-port-style"></div>
-                    <div id="meraki-port-24" class="meraki-port-style"></div>
-                    <div id="meraki-port-26" class="meraki-port-style"></div>
-                    <div id="meraki-port-28" class="meraki-port-style"></div>
-                    <div id="meraki-port-30" class="meraki-port-style"></div>
-                    <div id="meraki-port-32" class="meraki-port-style"></div>
-                    <div id="meraki-port-34" class="meraki-port-style"></div>
-                    <div id="meraki-port-36" class="meraki-port-style"></div>
-                    <div id="meraki-port-38" class="meraki-port-style"></div>
-                    <div id="meraki-port-40" class="meraki-port-style"></div>
-                    <div id="meraki-port-42" class="meraki-port-style"></div>
-                    <div id="meraki-port-44" class="meraki-port-style"></div>
-                    <div id="meraki-port-46" class="meraki-port-style"></div>
-                    <div id="meraki-port-48" class="meraki-port-style"></div>
+            </nav>
+            <div id="main-navigation-pane" class="container-fluid">
+                <div id="meraki-case" class="container-fluid d-flex  flex-row border border-dark shadow p-3 mb-5 bg-body rounded">
+                    <div class="container d-flex flex-column justify-content-center">
+                        <div class="d-flex">
+                            <div class="meraki-port-number-style d-flex justify-content-center align-items-center">1</div>
+                            <div class="meraki-port-number-style d-flex justify-content-center align-items-center">3</div>
+                            <div class="meraki-port-number-style d-flex justify-content-center align-items-center">5</div>
+                            <div class="meraki-port-number-style d-flex justify-content-center align-items-center">7</div>
+                            <div class="meraki-port-number-style d-flex justify-content-center align-items-center">9</div>
+                            <div class="meraki-port-number-style d-flex justify-content-center align-items-center">11</div>
+                            <div class="meraki-port-number-style d-flex justify-content-center align-items-center">13</div>
+                            <div class="meraki-port-number-style d-flex justify-content-center align-items-center">15</div>
+                            <div class="meraki-port-number-style d-flex justify-content-center align-items-center">17</div>
+                            <div class="meraki-port-number-style d-flex justify-content-center align-items-center">19</div>
+                            <div class="meraki-port-number-style d-flex justify-content-center align-items-center">21</div>
+                            <div class="meraki-port-number-style d-flex justify-content-center align-items-center">23</div>
+                            <div class="meraki-port-number-style d-flex justify-content-center align-items-center">25</div>
+                            <div class="meraki-port-number-style d-flex justify-content-center align-items-center">27</div>
+                            <div class="meraki-port-number-style d-flex justify-content-center align-items-center">29</div>
+                            <div class="meraki-port-number-style d-flex justify-content-center align-items-center">31</div>
+                            <div class="meraki-port-number-style d-flex justify-content-center align-items-center">33</div>
+                            <div class="meraki-port-number-style d-flex justify-content-center align-items-center">35</div>
+                            <div class="meraki-port-number-style d-flex justify-content-center align-items-center">37</div>
+                            <div class="meraki-port-number-style d-flex justify-content-center align-items-center">39</div>
+                            <div class="meraki-port-number-style d-flex justify-content-center align-items-center">41</div>
+                            <div class="meraki-port-number-style d-flex justify-content-center align-items-center">43</div>
+                            <div class="meraki-port-number-style d-flex justify-content-center align-items-center">45</div>
+                            <div class="meraki-port-number-style d-flex justify-content-center align-items-center">47</div>
+                        </div>
+                        <div id="meraki-ports-container-1" class="d-flex" >
+                            <div id="meraki-port-1" class="meraki-port-style d-flex justify-content-center align-items-center border border-dark" data-toggle="tooltip" data-placement="top" title="Tooltip on top"></div>
+                            <div id="meraki-port-3" class="meraki-port-style d-flex justify-content-center align-items-center border border-dark" data-toggle="tooltip" data-placement="top" title="Tooltip on top"></div>
+                            <div id="meraki-port-5" class="meraki-port-style d-flex justify-content-center align-items-center border border-dark" data-toggle="tooltip" data-placement="top" title="Tooltip on top"></div>
+                            <div id="meraki-port-7" class="meraki-port-style d-flex justify-content-center align-items-center border border-dark" data-toggle="tooltip" data-placement="top" title="Tooltip on top"></div>
+                            <div id="meraki-port-9" class="meraki-port-style d-flex justify-content-center align-items-center border border-dark" data-toggle="tooltip" data-placement="top" title="Tooltip on top"></div>
+                            <div id="meraki-port-11" class="meraki-port-style d-flex justify-content-center align-items-center border border-dark" data-toggle="tooltip" data-placement="top" title="Tooltip on top"></div>
+                            <div id="meraki-port-13" class="meraki-port-style d-flex justify-content-center align-items-center border border-dark" data-toggle="tooltip" data-placement="top" title="Tooltip on top"></div>
+                            <div id="meraki-port-15" class="meraki-port-style d-flex justify-content-center align-items-center border border-dark" data-toggle="tooltip" data-placement="top" title="Tooltip on top"></div>
+                            <div id="meraki-port-17" class="meraki-port-style d-flex justify-content-center align-items-center border border-dark" data-toggle="tooltip" data-placement="top" title="Tooltip on top"></div>
+                            <div id="meraki-port-19" class="meraki-port-style d-flex justify-content-center align-items-center border border-dark" data-toggle="tooltip" data-placement="top" title="Tooltip on top"></div>
+                            <div id="meraki-port-21" class="meraki-port-style d-flex justify-content-center align-items-center border border-dark" data-toggle="tooltip" data-placement="top" title="Tooltip on top"></div>
+                            <div id="meraki-port-23" class="meraki-port-style d-flex justify-content-center align-items-center border border-dark" data-toggle="tooltip" data-placement="top" title="Tooltip on top"></div>
+                            <div id="meraki-port-25" class="meraki-port-style d-flex justify-content-center align-items-center border border-dark" data-toggle="tooltip" data-placement="top" title="Tooltip on top"></div>
+                            <div id="meraki-port-27" class="meraki-port-style d-flex justify-content-center align-items-center border border-dark" data-toggle="tooltip" data-placement="top" title="Tooltip on top"></div>
+                            <div id="meraki-port-29" class="meraki-port-style d-flex justify-content-center align-items-center border border-dark" data-toggle="tooltip" data-placement="top" title="Tooltip on top"></div>
+                            <div id="meraki-port-31" class="meraki-port-style d-flex justify-content-center align-items-center border border-dark" data-toggle="tooltip" data-placement="top" title="Tooltip on top"></div>
+                            <div id="meraki-port-33" class="meraki-port-style d-flex justify-content-center align-items-center border border-dark" data-toggle="tooltip" data-placement="top" title="Tooltip on top"></div>
+                            <div id="meraki-port-35" class="meraki-port-style d-flex justify-content-center align-items-center border border-dark" data-toggle="tooltip" data-placement="top" title="Tooltip on top"></div>
+                            <div id="meraki-port-37" class="meraki-port-style d-flex justify-content-center align-items-center border border-dark" data-toggle="tooltip" data-placement="top" title="Tooltip on top"></div>
+                            <div id="meraki-port-39" class="meraki-port-style d-flex justify-content-center align-items-center border border-dark" data-toggle="tooltip" data-placement="top" title="Tooltip on top"></div>
+                            <div id="meraki-port-41" class="meraki-port-style d-flex justify-content-center align-items-center border border-dark" data-toggle="tooltip" data-placement="top" title="Tooltip on top"></div>
+                            <div id="meraki-port-43" class="meraki-port-style d-flex justify-content-center align-items-center border border-dark" data-toggle="tooltip" data-placement="top" title="Tooltip on top"></div>
+                            <div id="meraki-port-45" class="meraki-port-style d-flex justify-content-center align-items-center border border-dark" data-toggle="tooltip" data-placement="top" title="Tooltip on top"></div>
+                            <div id="meraki-port-47" class="meraki-port-style d-flex justify-content-center align-items-center border border-dark" data-toggle="tooltip" data-placement="top" title="Tooltip on top"></div>
+                        </div>
+                        <div class="d-flex">
+                            <div class="meraki-port-number-style d-flex justify-content-center align-items-center">2</div>
+                            <div class="meraki-port-number-style d-flex justify-content-center align-items-center">4</div>
+                            <div class="meraki-port-number-style d-flex justify-content-center align-items-center">6</div>
+                            <div class="meraki-port-number-style d-flex justify-content-center align-items-center">8</div>
+                            <div class="meraki-port-number-style d-flex justify-content-center align-items-center">10</div>
+                            <div class="meraki-port-number-style d-flex justify-content-center align-items-center">12</div>
+                            <div class="meraki-port-number-style d-flex justify-content-center align-items-center">14</div>
+                            <div class="meraki-port-number-style d-flex justify-content-center align-items-center">16</div>
+                            <div class="meraki-port-number-style d-flex justify-content-center align-items-center">18</div>
+                            <div class="meraki-port-number-style d-flex justify-content-center align-items-center">20</div>
+                            <div class="meraki-port-number-style d-flex justify-content-center align-items-center">22</div>
+                            <div class="meraki-port-number-style d-flex justify-content-center align-items-center">24</div>
+                            <div class="meraki-port-number-style d-flex justify-content-center align-items-center">26</div>
+                            <div class="meraki-port-number-style d-flex justify-content-center align-items-center">28</div>
+                            <div class="meraki-port-number-style d-flex justify-content-center align-items-center">30</div>
+                            <div class="meraki-port-number-style d-flex justify-content-center align-items-center">32</div>
+                            <div class="meraki-port-number-style d-flex justify-content-center align-items-center">34</div>
+                            <div class="meraki-port-number-style d-flex justify-content-center align-items-center">36</div>
+                            <div class="meraki-port-number-style d-flex justify-content-center align-items-center">38</div>
+                            <div class="meraki-port-number-style d-flex justify-content-center align-items-center">40</div>
+                            <div class="meraki-port-number-style d-flex justify-content-center align-items-center">42</div>
+                            <div class="meraki-port-number-style d-flex justify-content-center align-items-center">44</div>
+                            <div class="meraki-port-number-style d-flex justify-content-center align-items-center">46</div>
+                            <div class="meraki-port-number-style d-flex justify-content-center align-items-center">48</div>
+                        </div>
+                        <div id="meraki-port-container-2" class="d-flex">
+                            <div id="meraki-port-2" class="meraki-port-style d-flex justify-content-center align-items-center border border-dark" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom"></div>
+                            <div id="meraki-port-4" class="meraki-port-style d-flex justify-content-center align-items-center border border-dark" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom"></div>
+                            <div id="meraki-port-6" class="meraki-port-style d-flex justify-content-center align-items-center border border-dark" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom"></div>
+                            <div id="meraki-port-8" class="meraki-port-style d-flex justify-content-center align-items-center border border-dark" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom"></div>
+                            <div id="meraki-port-10" class="meraki-port-style d-flex justify-content-center align-items-center border border-dark" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom"></div>
+                            <div id="meraki-port-12" class="meraki-port-style d-flex justify-content-center align-items-center border border-dark" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom"></div>
+                            <div id="meraki-port-14" class="meraki-port-style d-flex justify-content-center align-items-center border border-dark" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom"></div>
+                            <div id="meraki-port-16" class="meraki-port-style d-flex justify-content-center align-items-center border border-dark" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom"></div>
+                            <div id="meraki-port-18" class="meraki-port-style d-flex justify-content-center align-items-center border border-dark" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom"></div>
+                            <div id="meraki-port-20" class="meraki-port-style d-flex justify-content-center align-items-center border border-dark" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom"></div>
+                            <div id="meraki-port-22" class="meraki-port-style d-flex justify-content-center align-items-center border border-dark" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom"></div>
+                            <div id="meraki-port-24" class="meraki-port-style d-flex justify-content-center align-items-center border border-dark" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom"></div>
+                            <div id="meraki-port-26" class="meraki-port-style d-flex justify-content-center align-items-center border border-dark" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom"></div>
+                            <div id="meraki-port-28" class="meraki-port-style d-flex justify-content-center align-items-center border border-dark" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom"></div>
+                            <div id="meraki-port-30" class="meraki-port-style d-flex justify-content-center align-items-center border border-dark" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom"></div>
+                            <div id="meraki-port-32" class="meraki-port-style d-flex justify-content-center align-items-center border border-dark" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom"></div>
+                            <div id="meraki-port-34" class="meraki-port-style d-flex justify-content-center align-items-center border border-dark" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom"></div>
+                            <div id="meraki-port-36" class="meraki-port-style d-flex justify-content-center align-items-center border border-dark" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom"></div>
+                            <div id="meraki-port-38" class="meraki-port-style d-flex justify-content-center align-items-center border border-dark" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom"></div>
+                            <div id="meraki-port-40" class="meraki-port-style d-flex justify-content-center align-items-center border border-dark" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom"></div>
+                            <div id="meraki-port-42" class="meraki-port-style d-flex justify-content-center align-items-center border border-dark" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom"></div>
+                            <div id="meraki-port-44" class="meraki-port-style d-flex justify-content-center align-items-center border border-dark" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom"></div>
+                            <div id="meraki-port-46" class="meraki-port-style d-flex justify-content-center align-items-center border border-dark" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom"></div>
+                            <div id="meraki-port-48" class="meraki-port-style d-flex justify-content-center align-items-center border border-dark" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div><div id="meraki-title">
-            <input type="file" id="dialog">
-            <button id="button-choose-file" type="button" class="btn btn-outline-info">Choose CSV File</button>
-            <output id="output">
-            </output>
+            <div id="button-container" class="d-flex">
+                <!-- Choose File Button -->
+                <div id="button-choose-file-container">
+                    <input type="file" id="dialog">
+                    <button id="button-choose-file" type="button" class="btn btn-primary">Choose CSV File</button>
+                    <output id="output"></output>
+                </div>
+
+                <div id="button-select-device" class="btn-group">
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Select Device
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Avaya</a>
+                        <a class="dropdown-item" href="#">3COM</a>
+                        <a class="dropdown-item" href="#">Meraki MS120-24</a>
+                        <a class="dropdown-item" href="#">Meraki MS120-48</a>
+                        <a class="dropdown-item" href="#">Cisco FireWall CSA</a>
+                        <a class="dropdown-item" href="#">Cisco FireWall CSAWF</a>
+                        <a class="dropdown-item" href="#">Cisco Switch VM 24</a>
+                        <a class="dropdown-item" href="#">Cisco Switch VM 48</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Patch Panel</a>
+                    </div>
+                </div>
+            </div>
+            <div id="table-container">
+                <table id="csv-data-table" class="table table-striped table-hover">
+                    <thead>
+                        <tr>
+                            <th scope="col">Switch Port Number</th>
+                            <th scope="col">Goes To</th>
+                            <th scope="col">With Port Number</th>
+                            <th scope="col">With a Workstation Label</th>
+                            <th scope="col">On Rack</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>CSAWF FW 1</td>
+                            <td>1</td>
+                            <td>PPE</td>
+                            <td>Other</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>CSAWF FW 2</td>
+                            <td>1</td>
+                            <td>21</td>
+                            <td>Other</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>PPE</td>
+                            <td>21</td>
+                            <td>147A</td>
+                            <td>R2</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="toast-container position-fixed p-10">
+            <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header">
+                    <img src="/images/thumbsup.svg" class="rounded me-2" alt="thumbs up">
+                    <strong class="me-auto">Success!</strong>
+                    <!-- close button here -->
+                </div>
+                <div class="toast-body" color="green">
+                    Port mapping complete.
+                </div>
+            </div>
         </div>
     </div>
     <!-- main.js -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="papaparse.min.js"></script>
     <script type="module" src="/main.js"></script>
     <!-- Bootstrap -->

@@ -116,7 +116,10 @@ function portMapper(results){
 }
 
 function setToolTip(){
-    $('[data-toggle="tooltip"]').tooltip()
+    $(function() {
+        $('[data-toggle="tooltip"]').tooltip()
+    })
+   
 }
 
 function createTable(){
